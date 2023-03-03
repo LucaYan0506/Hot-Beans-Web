@@ -7,7 +7,9 @@ h1{
 }
 
 nav{
-    width:100%;
+    width: calc(100% - 20px);
+    padding-left:10px;
+    padding-right:10px;
     height: 80px;
     background-color: #09192C;
     position: fixed;
@@ -26,10 +28,16 @@ nav.normal{
     0%{
         background-color: #1b1038;
         height: 80px;
+        width: calc(100% - 20px);
+        padding-left:10px;
+        padding-right:10px;
     }
     100%{
         background-color: #09192C;
         height: 150px;
+        width: 84%;
+        padding-left:8%;
+        padding-right:8%;
     }
 }
 
@@ -37,10 +45,52 @@ nav.normal{
     0%{
         background-color: #09192C;
         height: 150px;
+        width: 80%;
+        padding-left:10%;
+        padding-right:10%;
     }
     100%{
         background-color: #1b1038;
         height: 80px;
+        width: calc(100% - 20px);
+        padding-left:10px;
+        padding-right:10px;
+    }
+}
+
+@media only screen and (max-width: 1250px)  {
+    @keyframes nav-home{
+        0%{
+            background-color: #1b1038;
+            height: 80px;
+            width: calc(100% - 20px);
+            padding-left:10px;
+            padding-right:10px;
+        }
+        100%{
+            background-color: #09192C;
+            height: 150px;
+            width: 94%;
+            padding-left:3%;
+            padding-right:3%;
+        }
+    }
+    
+    @keyframes nav-normal{
+        0%{
+            background-color: #09192C;
+            height: 150px;
+            width: 94%;
+            padding-left:3%;
+            padding-right:3%;
+        }
+        100%{
+            background-color: #1b1038;
+            height: 80px;
+            width: calc(100% - 20px);
+            padding-left:10px;
+            padding-right:10px;
+        }
     }
 }
 
@@ -50,7 +100,7 @@ nav.normal{
 }
 
 #company-name{
-    color: fff;
+    color: #fff;
 }
 
 nav #left{
@@ -98,16 +148,16 @@ nav #right a:hover{
 
 #home-page h1{
     color:#fff;
-    font-size: 80px;
-    font:bold;
+    font-size: min(7vw,70px);
+    font-weight:bold;
     margin-bottom:0;
 }
 
 #home-page p{
     color:#fff;
     margin-bottom:0;
-    font-size:24px;
-
+    font-size: min(2vw,24px);
+    font-weight: 100;
 }
 
 #service-page{
@@ -123,29 +173,150 @@ nav #right a:hover{
     margin:0;
     padding-top:10px;
     width: 100%;
-    font-size:60px;
+    font-size: min(5vw,60px);
     text-align: center;
 }
 
 #service-page #sub-title{
-    font-size:24px;
+    font-size: min(2vw,24px);
     text-align: center;
+    font-weight: 100;
 }
 
 #service-page #content{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    position:relative;
+    text-align: center;
+    width:min(1250px, 100%);
+    margin:0 auto;
 }
 
 #service-page .container{
+    text-align: left;
+    display: inline-block;
     width: 300px;
-    height: 300px;
+    height: 200px;
     background-color: #fff;
-    margin:20px
+    margin:20px;
+    padding:10px 20px 0 20px;
+    position:relative;
 }
+
+#service-page .container:last-of-type{
+    margin-bottom: 120px;
+}
+
 
 #service-page .container p{
     margin:10px;
 }
+#service-page .container a{
+    text-decoration: none;
+    color:#db5156;
+    padding:10px;
+}
 
+#service-page #content button{
+    position:absolute;
+    right: 70px;
+    bottom:60px;
+    width: 250px;
+    padding:15px;
+    border-radius: 25px;
+    border:transparent;
+    color:#fff;
+    background-color: #f93f08;
+    cursor: pointer;
+}
+
+#about-us-page{
+    width:100%;
+    background-color: #1F153B;
+    padding:25px 0;
+    position:relative;
+}
+
+#about-us-page:before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../../Image&assets/AboutUsBackground2.png);
+    background-repeat: round;
+}
+
+
+#about-us-page #content{
+    position:relative;
+    text-align: center;
+    width:min(1250px, 100%);
+    margin:0 auto;
+}
+
+#about-us-page #content #left, #about-us-page #content #right{
+    vertical-align: top;
+    display: inline-block;
+    width:48%;
+}
+
+#about-us-page #content #left{
+    position:relative;
+    top:-90px;
+    text-align: left;
+    padding-left:2%;
+    color:#fff;
+}
+
+#about-us-page #content #left h1{
+    position: relative;
+    margin:0;
+    padding-bottom:20px;
+    width: 100%;
+    font-size: min(5vw,60px);
+    text-align: center;
+}
+
+#about-us-page2{
+    width:100%;
+    background-color: #fff;
+    padding:25px 0;
+    position:relative;
+}
+
+#about-us-page2 h1{
+    position: relative;
+    margin:0;
+    padding-top:10px;
+    width: 100%;
+    font-size: min(4vw,50px);
+    text-align: center;
+}
+
+#about-us-page2 #content{
+    position:relative;
+    text-align: center;
+    width:min(1250px, 100%);
+    margin:0 auto;
+}
+
+#about-us-page2 .item{
+    display: inline-block;
+    width: 390px;
+    margin:10px;
+}
+
+#about-us-page2 .item span{
+    color:#db5156;
+    font-size:min(4vw,50px);
+    position:relative;
+}
+#about-us-page2 .item span::before{
+    position:absolute;
+    right:-20px;
+    top:-10px;
+    content:"+";
+    color:#db5156;
+    font-size:min(4vw,40px);
+    font-weight: bold;
+}
