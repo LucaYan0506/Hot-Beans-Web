@@ -302,7 +302,7 @@ nav #right a:hover{
 
 #about-us-page2 .item{
     display: inline-block;
-    width: 390px;
+    width: min(390px, 30vw);
     margin:10px;
 }
 
@@ -319,4 +319,117 @@ nav #right a:hover{
     color:#db5156;
     font-size:min(4vw,40px);
     font-weight: bold;
+}
+
+#our-team{
+    width:100%;
+    background-color: #e5e6ea;
+    padding:25px 0;
+    position:relative;
+}
+
+#our-team #title{
+    position: relative;
+    margin:0;
+    padding-top:10px;
+    width: 100%;
+    font-size: min(4vw,50px);
+    text-align: center;
+}
+
+#our-team  #content{
+    position:relative;
+    text-align: center;
+    width:min(1250px, 100%);
+    margin:0 auto;
+    padding-bottom:90px;
+}
+
+#our-team #content button{
+    position:absolute;
+    right: 70px;
+    bottom:30px;
+    width: 250px;
+    padding:15px;
+    border-radius: 25px;
+    border:transparent;
+    color:#fff;
+    background-color: #f93f08;
+    cursor: pointer;
+}
+
+#our-team .item{
+    display: inline-block;
+    width: min(390px, 30vw);
+    margin:10px;
+}
+
+#our-team .item #description{
+    width: min(390px, 30vw);
+    font-size:min(2vw,25px);
+    background-color: #fff;
+}
+
+#our-team .item img{
+    width: min(390px, 30vw);
+}
+
+#careers-page{
+    width:100%;
+    background-color: #1F153B;
+    padding-top:25px;
+    position:relative;
+}
+
+#careers-page:before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../../Image&assets/AboutUsBackground2.png);
+    background-repeat: round;
+}
+
+
+#careers-page #content{
+    position:relative;
+    text-align: center;
+    width:min(1250px, 100%);
+    margin:0 auto;
+    top:-80px;
+}
+
+#careers-page #title{
+    color: #fff;
+    font-size: min(5vw,60px);
+    font-weight: bold;  
+    position: relative;
+    top:-30px;
+    left:-80px;
+    width: 50%;
+    text-align: center;
+}
+
+#careers-page .item{
+    display: inline-block;
+    width: min(390px, 30vw);
+    margin:10px;
+    background-color: #fff;
+    text-align: left;
+}
+
+#careers-page #content button{
+    position:absolute;
+    bottom:-60px;
+    left:10px;
+    width: calc(100% - 20px);
+    padding:15px 0;
+    border-radius: 25px;
+    border:transparent;
+    color:#fff;
+    font-size: 20px;
+    background-color: #f93f08;
+    cursor: pointer;
 }
