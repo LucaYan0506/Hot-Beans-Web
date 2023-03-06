@@ -423,6 +423,10 @@ nav #right a:hover{
 
 #careers-page .item h1{
     padding:10px 0;
+    width: 290px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #careers-page #content button{
