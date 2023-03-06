@@ -422,7 +422,7 @@ nav #right a:hover{
 }
 
 #careers-page .item h1{
-    height: 80px;
+    padding:10px 0;
 }
 
 #careers-page #content button{
