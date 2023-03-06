@@ -1,5 +1,6 @@
 body{
     margin:0;
+    font-family: serif;
 }
 
 h1{
@@ -420,6 +421,10 @@ nav #right a:hover{
     text-align: left;
 }
 
+#careers-page .item h1{
+    height: 80px;
+}
+
 #careers-page #content button{
     position:absolute;
     bottom:-60px;
@@ -432,4 +437,19 @@ nav #right a:hover{
     font-size: 20px;
     background-color: #f93f08;
     cursor: pointer;
+}
+
+#our-course{
+    width:100%;
+    background-color: #e5e6ea;
+    padding:25px 0;
+    position:relative;
+}
+
+#our-course #title{
+    position: relative;
+    margin:0;
+    width: 100%;
+    font-size: min(5vw,60px);
+    text-align: center;
 }
