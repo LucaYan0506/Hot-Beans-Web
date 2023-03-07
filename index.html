@@ -6,6 +6,7 @@
     <title>Hot Beans Web</title>
     <link rel="stylesheet" href="CSS/index/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
     <nav class="home">
@@ -33,7 +34,7 @@
             <span id="sub-title">Experience exceptional service customized to your needs</span>
         </h1>
 
-        <div id="content">
+        <div class="content">
             <div class="container">
                 <h1>Web development</h1>
                 <p>It involves creating and maintaining websites. We use technical and creative skills with variety of programming languages to ensure the website's functionality, security, and performance.</p>
@@ -54,7 +55,7 @@
     </section>
 
     <section id="about-us-page">
-        <div id="content">
+        <div class="content">
             <div id="left">
                 <h1>About Us</h1>
                 <p>At Hot Beans Web, we specialise in developing bespoke websites and web applications that are tailored to our clients' unique needs. Our mission is to deliver innovative and high-quality solutions that help businesses succeed in the digital world. We take a personalised approach to every project and work closely with our clients to identify their specific requirements.</p>
@@ -68,7 +69,7 @@
 
     <section id="about-us-page2">
         <h1 id="title">Quick Facts</h1>
-        <div id="content">
+        <div class="content">
             <div class="item"><span>100<br></span>experts</div>
             <div class="item"><span>10<br></span>years of market</div>
             <div class="item"><span>50<br></span>projects delivered</div>
@@ -80,7 +81,7 @@
 
     <section id="our-team">
         <h1 id="title">Our Team</h1>
-        <div id="content">
+        <div class="content">
             <div class="item">
                 <img src="Image&assets/avator_icon.jpg" alt="avatar">
                 <div id="description">
@@ -151,7 +152,7 @@
     </section>
 
     <section id="careers-page">
-        <div id="content">
+        <div class="content">
             <h1 id="title">Careers</h1>
 
             <div class="item">
@@ -201,10 +202,58 @@
 
     <section id="our-course">
         <h1 id="title">Our Courses</h1>
-        <div id="content"></div>
-        
+        <!--
+        <div class="content" id="videos">
+            <div id="video"><iframe width="500" height="315" src="https://www.youtube.com/embed/zJSY8tbf_ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div id="video"><iframe width="500" height="315" src="https://www.youtube.com/embed/nu_pCVPKzTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div id="video"><iframe width="500" height="315" src="https://www.youtube.com/embed/G3e-cpL7ofc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div id="video"><iframe width="500" height="315" src="https://www.youtube.com/embed/Q33KBiDriJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div id="video"><iframe width="500" height="315" src="https://www.youtube.com/embed/F5mRW0jo-U4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        </div>
+        -->
+
+        <div class="content" id="vidoes">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div id="video"><iframe width="500" height="315" src="https://www.youtube.com/embed/zJSY8tbf_ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="video"><iframe width="500" height="315" src="https://www.youtube.com/embed/nu_pCVPKzTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="video"><iframe width="500" height="315" src="https://www.youtube.com/embed/G3e-cpL7ofc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="video"><iframe width="500" height="315" src="https://www.youtube.com/embed/Q33KBiDriJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="video"><iframe width="500" height="315" src="https://www.youtube.com/embed/F5mRW0jo-U4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
     </section>
 
+
     <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

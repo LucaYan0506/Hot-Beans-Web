@@ -184,7 +184,7 @@ nav #right a:hover{
     font-weight: 100;
 }
 
-#service-page #content{
+.content{
     position:relative;
     text-align: center;
     width:min(1250px, 100%);
@@ -216,7 +216,7 @@ nav #right a:hover{
     padding:10px;
 }
 
-#service-page #content button{
+#service-page .content button{
     position:absolute;
     right: 70px;
     bottom:60px;
@@ -247,21 +247,13 @@ nav #right a:hover{
     background-repeat: round;
 }
 
-
-#about-us-page #content{
-    position:relative;
-    text-align: center;
-    width:min(1250px, 100%);
-    margin:0 auto;
-}
-
-#about-us-page #content #left, #about-us-page #content #right{
+#about-us-page .content #left, #about-us-page .content #right{
     vertical-align: top;
     display: inline-block;
     width:48%;
 }
 
-#about-us-page #content #left{
+#about-us-page .content #left{
     position:relative;
     top:-90px;
     text-align: left;
@@ -269,7 +261,7 @@ nav #right a:hover{
     color:#fff;
 }
 
-#about-us-page #content #left h1{
+#about-us-page .content #left h1{
     position: relative;
     margin:0;
     padding-bottom:20px;
@@ -292,13 +284,6 @@ nav #right a:hover{
     width: 100%;
     font-size: min(4vw,50px);
     text-align: center;
-}
-
-#about-us-page2 #content{
-    position:relative;
-    text-align: center;
-    width:min(1250px, 100%);
-    margin:0 auto;
 }
 
 #about-us-page2 .item{
@@ -338,15 +323,11 @@ nav #right a:hover{
     text-align: center;
 }
 
-#our-team  #content{
-    position:relative;
-    text-align: center;
-    width:min(1250px, 100%);
-    margin:0 auto;
+#our-team  .content{
     padding-bottom:90px;
 }
 
-#our-team #content button{
+#our-team .content button{
     position:absolute;
     right: 70px;
     bottom:30px;
@@ -394,11 +375,7 @@ nav #right a:hover{
 }
 
 
-#careers-page #content{
-    position:relative;
-    text-align: center;
-    width:min(1250px, 100%);
-    margin:0 auto;
+#careers-page .content{
     top:-80px;
 }
 
@@ -429,7 +406,7 @@ nav #right a:hover{
     text-overflow: ellipsis;
 }
 
-#careers-page #content button{
+#careers-page .content button{
     position:absolute;
     bottom:-60px;
     left:10px;
@@ -457,3 +434,22 @@ nav #right a:hover{
     font-size: min(5vw,60px);
     text-align: center;
 }
+
+.carousel-control-prev{
+    position: relative;
+}
+
+.carousel-control-prev::before{
+    content: '';
+    position: absolute;
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+#video{
+    width:min(1250px, 100%);
+}
+
+
