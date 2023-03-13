@@ -220,7 +220,7 @@ nav #right a:hover{
     padding:10px;
 }
 
-#service-page .content button{
+#service-page .content #view-service{
     position:absolute;
     right: 70px;
     bottom:60px;
@@ -229,6 +229,7 @@ nav #right a:hover{
     border-radius: 25px;
     border:transparent;
     color:#fff;
+    text-decoration: none;
     background-color: #f93f08;
     cursor: pointer;
     z-index: 2;
