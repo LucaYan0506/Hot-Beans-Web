@@ -1,7 +1,7 @@
 #content {
     padding-top:100px;
     min-height: calc(100% - 80px);
-    width: 100vw;
+    width: 100%;
     background-color: #E5E6EA;
 }
 
@@ -22,45 +22,94 @@
 }
 
 section{
-    width: 100vw;
+    width: 100%;
     padding: 0;
     list-style: none;
     font-size: 0;
-    background-image: url(../../Image&assets/service/web\ development.jpg)
+}
+
+section#first{
+    background-image: url(../../Image&assets/service/web\ development.jpg);
+}
+
+section#Second{
+    background-image: url(../../Image&assets/service/it\ consulting.jpg);
+    background-repeat: round no-repeat;
+}
+
+section#Third{
+    background-image: url(../../Image&assets/service/Design\ Solution.png);
+    background-repeat: round no-repeat;
 }
 
 #content #left, 
 #content #right{
     display: inline-block;
-    width: 50vw;
+    width: 50%;
     font-size: 16px;
     vertical-align: top;
     background-color: #65C7C6;
 }
 
-#content #left #title{
+#content #right{
+    margin-left: 50%;
+}
+
+#content #left #title,
+#content #right #title{
+    width:min(625px, 100%)!important;
     font-size: min(3vw,36px);
     color:#fff;
     width: 100%;
     text-align: center;
     margin:0;
+    float: right;
 }
 
-#content #left p{
+#content #right #title{
+    float:left;
+}
+
+#content #left p,
+#content #right p{
+    width:min(625px, calc(100% - 20px));
     font-size: min(1.5vw,18px);
     padding:10px;
     color:#fff;
     text-align: left;
     margin:0;
+    float: right;
 }
 
-#content #left button{
-    float: right;
+#content #right p{
+    float:left;
+}
+
+#content #left button,
+#content #right button{
+    color:#fff;
     background-color: #65C7C6;
     border: solid #fff 1px;
     margin: 5px;
     padding: 10px;
     width: 200px;
     border-radius: 10px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#content #left button{
+    float: right;
+    margin-right:12px
+}
+
+#content #right button{
+    float: left;
+    margin-left:12px
+}
+
+#content #left button:hover,
+#content #right button:hover{
+    color:#65C7C6;
+    background-color: #fff;
 }
 
