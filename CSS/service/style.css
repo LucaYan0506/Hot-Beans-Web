@@ -26,7 +26,7 @@ section{
     padding: 0;
     list-style: none;
     font-size: 0;
-    background-color: #65C7C6;
+    background-image: url(../../Image&assets/service/web\ development.jpg)
 }
 
 #content #left, 
@@ -35,6 +35,7 @@ section{
     width: 50vw;
     font-size: 16px;
     vertical-align: top;
+    background-color: #65C7C6;
 }
 
 #content #left #title{
@@ -55,9 +56,11 @@ section{
 
 #content #left button{
     float: right;
+    background-color: #65C7C6;
+    border: solid #fff 1px;
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
 }
 
-#content #right{
-    overflow: hidden;
-    position: relative;
-}
