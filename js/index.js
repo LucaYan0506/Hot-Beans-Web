@@ -77,3 +77,6 @@ document.getElementById('carouselNext').addEventListener('click', function(e) {
     showItem('from-right');
   }
 });
+
+//pop up windows that show job specification
+const careers_page_items = document.querySelectorAll('#careers-page .item');

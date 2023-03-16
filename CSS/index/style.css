@@ -403,7 +403,37 @@ nav #right a:hover{
     margin:10px;
     background-color: #fff;
     text-align: left;
+    cursor: pointer;
 }
+
+
+#careers-page .item #black-background{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #00000078;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    cursor: default;
+}
+
+#careers-page .item #black-background #content {
+    width: min(1250px, 100%);
+    background: #fff;
+    display: block;
+    margin: 10% auto;
+    max-height: 80%;
+    overflow: auto;
+}
+
+#careers-page .item #black-background #content h1{
+    width: calc(100% - 20px);
+    padding:10px;
+    text-align: center;
+    margin:0;
+}
+
 
 #careers-page .item h1{
     padding:10px 0;
