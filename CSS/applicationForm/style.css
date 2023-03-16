@@ -1,3 +1,4 @@
+/*styling the content*/
 #content {
     padding-top:100px;
     min-height: calc(100% - 200px);
@@ -23,6 +24,7 @@
     color:#3c4353;
 }
 
+/*styling the form*/
 form{
     position:relative;
     width:min(1250px, 100%);
@@ -70,6 +72,7 @@ form label{
     font-size:0
 }
 
+/*set the input width to 50% (so that we have 2 input in the same line)*/
 .col-md-6 {
     display: inline-block;
     position: relative;
@@ -92,6 +95,7 @@ form label{
     max-width: calc(50% - 10px);
 }
 
+/* styling the select tag */
 .custom-select {
     display: inline-block;
     width: 100%;
@@ -109,6 +113,7 @@ form label{
     appearance: none;
 }
 
+/* styling the button */
 .btn-primary {
     color: #fff;
     background-color: #007bff;

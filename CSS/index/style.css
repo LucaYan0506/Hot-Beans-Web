@@ -11,6 +11,7 @@ h1{
     margin:10px;
 }
 
+/*Navbar*/
 nav{
     width: calc(100% - 20px);
     padding-left:10px;
@@ -29,6 +30,7 @@ nav.normal{
     animation: nav-normal 1s forwards;
 }
 
+/*Animation for Navbar when we are in the home section*/
 @keyframes nav-home{
     0%{
         background-color: #1b1038;
@@ -46,6 +48,7 @@ nav.normal{
     }
 }
 
+/*Animation for Navbar when we are in other sections*/
 @keyframes nav-normal{
     0%{
         background-color: #09192C;
@@ -137,6 +140,8 @@ nav #right a:hover{
     background-color: #29568d;
 }
 
+
+/*styling the home page*/
 #home-page{
     position: relative;
     top:0;
@@ -165,6 +170,7 @@ nav #right a:hover{
     font-weight: 100;
 }
 
+/*styling the service page*/
 #service-page{
     position: relative;
     left:0;
@@ -235,6 +241,7 @@ nav #right a:hover{
     z-index: 2;
 }
 
+/*styling the about us page*/
 #about-us-page{
     width:100%;
     background-color: #1F153B;
@@ -313,6 +320,7 @@ nav #right a:hover{
     font-weight: bold;
 }
 
+/*styling the our-team page*/
 #our-team{
     width:100%;
     background-color: #e5e6ea;
@@ -363,6 +371,7 @@ nav #right a:hover{
     width: min(390px, 30vw);
 }
 
+/*styling the careers page*/
 #careers-page{
     width:100%;
     background-color: #1F153B;
@@ -408,6 +417,7 @@ nav #right a:hover{
 
 
 #careers-page .item #black-background{
+    display: none;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -422,8 +432,9 @@ nav #right a:hover{
     width: min(1250px, 100%);
     background: #fff;
     display: block;
-    margin: 10% auto;
-    max-height: 80%;
+    margin: 10vh auto;
+    padding: 10px 20px;
+    max-height: 80vh;
     overflow: auto;
 }
 
@@ -433,6 +444,21 @@ nav #right a:hover{
     text-align: center;
     margin:0;
 }
+
+#careers-page .item #black-background #content a{
+    display: block;
+    width: calc(100% - 20px);
+    padding:15px 0;
+    border-radius: 25px;
+    border:transparent;
+    color:#fff;
+    font-size: 20px;
+    background-color: #f93f08;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
 
 
 #careers-page .item h1{
@@ -457,6 +483,7 @@ nav #right a:hover{
     cursor: pointer;
 }
 
+/*styling the our coruse page*/
 #our-course{
     width:100%;
     background-color: #e5e6ea;
@@ -689,6 +716,8 @@ nav #right a:hover{
     }
   }
 
+
+/*styling the our footer page*/
   #footer{
     background-color:#1d1d1d;
     color:white;

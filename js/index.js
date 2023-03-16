@@ -2,7 +2,7 @@ const body = document.querySelector('body');
 const nav = document.querySelector('nav');
 
 
-
+//animation for the navigation bar (it's done using CSS and JS)
 window.addEventListener('scroll', (e) => {
     if (body.scrollTop == 0){
         nav.className = "home";
@@ -80,3 +80,21 @@ document.getElementById('carouselNext').addEventListener('click', function(e) {
 
 //pop up windows that show job specification
 const careers_page_items = document.querySelectorAll('#careers-page .item');
+careers_page_items.forEach(el => {
+  el.addEventListener('click', (event) => {
+    if (event.target == el){
+      el.querySelector('#black-background').style.display = 'block';
+    }
+  })
+})
+
+
+//hide pop windows
+const popUpWindows = document.querySelectorAll('#careers-page .item #black-background');
+popUpWindows.forEach(el => {
+  el.addEventListener('click', (event) => {
+    if (event.target == el){
+      el.style.display = 'none';
+    }
+  })
+});
