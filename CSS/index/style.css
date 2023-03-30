@@ -140,7 +140,6 @@ nav #right a:hover{
     background-color: #29568d;
 }
 
-
 /*styling the home page*/
 #home-page{
     position: relative;
@@ -159,6 +158,7 @@ nav #right a:hover{
 #home-page h1{
     color:#fff;
     font-size: min(7vw,70px);
+
     font-weight:bold;
     margin-bottom:0;
 }
@@ -184,12 +184,12 @@ nav #right a:hover{
     margin:0;
     padding-top:10px;
     width: 100%;
-    font-size: min(5vw,60px);
+    font-size: 60px;
     text-align: center;
 }
 
 #service-page #sub-title{
-    font-size: min(2vw,24px);
+    font-size: 24px;
     text-align: center;
     font-weight: 100;
 }
@@ -279,7 +279,7 @@ nav #right a:hover{
     margin:0;
     padding-bottom:20px;
     width: 100%;
-    font-size: min(5vw,60px);
+    font-size: 60px;
     text-align: center;
 }
 
@@ -295,7 +295,7 @@ nav #right a:hover{
     margin:0;
     padding-top:10px;
     width: 100%;
-    font-size: min(4vw,50px);
+    font-size: 50px;
     text-align: center;
 }
 
@@ -307,7 +307,7 @@ nav #right a:hover{
 
 #about-us-page2 .item span{
     color:#db5156;
-    font-size:min(4vw,50px);
+    font-size: 50px;
     position:relative;
 }
 #about-us-page2 .item span::before{
@@ -316,7 +316,7 @@ nav #right a:hover{
     top:-10px;
     content:"+";
     color:#db5156;
-    font-size:min(4vw,40px);
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -333,7 +333,7 @@ nav #right a:hover{
     margin:0;
     padding-top:10px;
     width: 100%;
-    font-size: min(4vw,50px);
+    font-size: 50px;
     text-align: center;
 }
 
@@ -363,7 +363,7 @@ nav #right a:hover{
 
 #our-team .item #description{
     width: min(390px, 30vw);
-    font-size:min(2vw,25px);
+    font-size: 25px;
     background-color: #fff;
 }
 
@@ -397,7 +397,7 @@ nav #right a:hover{
 
 #careers-page #title{
     color: #fff;
-    font-size: min(5vw,60px);
+    font-size: 60px;
     font-weight: bold;  
     position: relative;
     top:-30px;
@@ -409,6 +409,7 @@ nav #right a:hover{
 #careers-page .item{
     display: inline-block;
     width: min(390px, 30vw);
+    min-width: 250px;   
     margin:10px;
     background-color: #fff;
     text-align: left;
@@ -463,7 +464,7 @@ nav #right a:hover{
 
 #careers-page .item h1{
     padding:10px 0;
-    width: 290px;
+
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -495,7 +496,7 @@ nav #right a:hover{
     position: relative;
     margin:0;
     width: 100%;
-    font-size: min(5vw,60px);
+    font-size: 60px;
     text-align: center;
 }
 
@@ -764,3 +765,32 @@ nav #right a:hover{
         max-height: 0px;
     }
   }
+
+/*mobile responsive*/
+@media only screen and (max-width: 1000px){
+    nav #right{
+        display: none;
+    }
+    #footer{
+        display: none;
+    }
+    #about-us-page .content #left, #about-us-page .content #right {
+        vertical-align: top;
+        display: inline-block;
+        width: 98%;
+        position: relative;
+    }
+    #about-us-page .content #right {
+        top: -40px;
+    }
+    #careers-page #title {
+        top: 0px;
+        left: 0px;
+    }
+  }
+
+@media only screen and (max-width: 500px){
+  iframe {
+    width: 100%;
+    }
+}

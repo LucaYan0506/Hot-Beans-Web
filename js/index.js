@@ -88,6 +88,15 @@ careers_page_items.forEach(el => {
   })
 })
 
+const careers_page_items_span = document.querySelectorAll('#careers-page .item span');
+careers_page_items_span.forEach(el => {
+  el.addEventListener('click', (event) => {
+    if (event.target == el){
+      el.parentElement.parentElement.querySelector('#black-background').style.display = 'block';
+    }
+  })
+})
+
 
 //hide pop windows
 const popUpWindows = document.querySelectorAll('#careers-page .item #black-background');
