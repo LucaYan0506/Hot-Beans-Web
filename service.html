@@ -8,17 +8,16 @@
     <!--link css file with the html file-->
     <link rel="stylesheet" href="CSS/index/style.css">
     <link rel="stylesheet" href="CSS/service/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <!--create a navigation bar-->
     <nav>
-        <!--logo-->
         <div id="left">
             <img src="Image&assets/logo.png" id="logo" alt="">
             <span id="company-name">Hot Beans Web</span>
         </div>
 
-        <!--links-->
         <div id="right">
             <a href="index.html#home-page">Home</a>
             <a href="index.html#service-page">Service</a>
@@ -27,8 +26,20 @@
             <a href="index.html#careers-page">Careers</a>
             <a href="index.html#our-course">Our Courses</a>
         </div>
+        <div id="right-mobile">
+            <i style="float: right;font-size:20px;color:white;margin:10px 20px;" onclick="hide_mobile_nav()">x</i>
+                <ul>
+                    <li onclick="hide_mobile_nav()"><a href="index.html#home-page">Home</a></li>
+                    <li onclick="hide_mobile_nav()"><a href="index.html#service-page">Service</a></li>
+                    <li onclick="hide_mobile_nav()"><a href="index.html#about-us-page">About Us</a></li>
+                    <li onclick="hide_mobile_nav()"><a href="index.html#our-team">Our Team</a></li>
+                    <li onclick="hide_mobile_nav()"><a href="index.html#careers-page">Careers</a></li>
+                    <li onclick="hide_mobile_nav()"><a href="index.html#our-course">Our Courses</a></li>
+                </ul>
+        </div>
+        <i class="material-icons" id="mobile-icon" onclick="show_mobile_nav()">menu</i>
     </nav>
-    
+
     <!--I've divide the page into 3 section(web development, IT consulting, Design Solution)-->
     <!--Each section is split into 2 parts. One part for the image and one part for the description of the service-->
     <div id="content">
@@ -122,6 +133,15 @@
   <div style="color:#1d1d1d;"></div>
   <div style="color:#1d1d1d;"></div>
 </div>
+<script>
+    //mobile friendly
+    function hide_mobile_nav(){
+        document.querySelector('nav #right-mobile').className = "hide";
+    }
 
+    function show_mobile_nav(){
+    document.querySelector('nav #right-mobile').className = "show";
+    }
+</script>
 </body>
 </html>

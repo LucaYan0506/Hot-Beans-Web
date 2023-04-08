@@ -107,3 +107,13 @@ popUpWindows.forEach(el => {
     }
   })
 });
+
+
+//mobile friendly
+function hide_mobile_nav(){
+      document.querySelector('nav #right-mobile').className = "hide";
+}
+
+function show_mobile_nav(){
+  document.querySelector('nav #right-mobile').className = "show";
+}
